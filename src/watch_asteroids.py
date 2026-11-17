@@ -15,7 +15,7 @@ dy_min,dy_max=-400,400
 dy_bins=10
 frame_skip=6
 
-Q=np.load('asteroids_qtable.npy')		# the trained table
+Q=np.load('results/qtables/asteroids_qtable.npy')		# the trained table
 
 env=gym.make('famnit_gym/Astronaut-v1',render_mode='human')	# with a window
 env=Asteroids(env)

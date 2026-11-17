@@ -11,7 +11,7 @@ env = Oxygen(env)
 env = DebugOverlay(env)
 
 # The trained table from train_asteroids_oxygen.py
-Q = np.load('asteroids_oxygen_qtable.npy')
+Q = np.load('results/qtables/asteroids_oxygen_qtable.npy')
 
 # The same constants as in training, so every state maps to the same bins.
 astronaut_x = 300
