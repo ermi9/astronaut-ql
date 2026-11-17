@@ -7,7 +7,7 @@ title = 'Part 2 (asteroids)'
 block_size = 200                      
 
 
-data = np.loadtxt(name + '_log.csv', delimiter=',', skiprows=1)
+data = np.loadtxt('results/logs/' + name + '_log.csv', delimiter=',', skiprows=1)
 losses = data[:, 1]              #the loss of every game
 frames = data[:, 2]              #the frames survived in every game
 
@@ -37,5 +37,5 @@ bottom.set_xlabel('game')
 bottom.set_ylabel('average frames survived (max 1200)')
 
 plt.tight_layout()
-plt.savefig(name + '_plot.png', dpi=150)
-print('saved', name + '_plot.png')
+plt.savefig('results/plots/' + name + '_plot.png', dpi=150)
+print('saved', 'results/plots/' + name + '_plot.png')
