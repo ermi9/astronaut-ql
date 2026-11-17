@@ -7,7 +7,7 @@ import time
 seed=0
 def temp_reward(info):
 	if info['collision']:
-		return -10
+		return -1
 	if info['oxygen_picked']:
 		return 1
 	return 0
