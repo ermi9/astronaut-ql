@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+famnit-gym/
+*.zip
+*.webm
+.DS_Store
