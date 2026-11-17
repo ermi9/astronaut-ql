@@ -119,9 +119,9 @@ rand=evaluate(False)
 print("trained agent: mean",np.mean(trained),"frames,",sum(s==1200 for s in trained),"/50 survivced")
 print("random agent: mean",np.mean(rand),"frames,", sum(s==1200 for s in rand),"/50 survived")
 print("training time: ",round(train_time,1),"s")
-np.savetxt('asteroids_log.csv',log,delimiter=',',header='episode,loss,steps',comments='',fmt=['%d','%.8f','%d'])
-np.save('asteroids_qtable.npy',Q)
-print("saved part1_log.csv and part1_qtable.npy")
+np.savetxt('results/logs/asteroids_log.csv',log,delimiter=',',header='episode,loss,steps',comments='',fmt=['%d','%.8f','%d'])
+np.save('results/qtables/asteroids_qtable.npy',Q)
+print("saved results/logs/asteroids_log.csv and results/qtables/asteroids_qtable.npy")
 		
 
 
