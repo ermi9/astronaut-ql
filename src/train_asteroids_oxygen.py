@@ -133,9 +133,9 @@ random_frames,random_tanks=evaluate(False)
 print("trained agent: mean",np.mean(trained_frames),"frames,",sum(s==1200 for s in trained_frames),"/50 survivced, mean tanks", np.mean(trained_tanks))
 print("random agent: mean",np.mean(random_frames),"frames,", sum(s==1200 for s in random_frames),"/50 survived, mean tanks", np.mean(random_tanks))
 print("training time: ",round(train_time,1),"s")
-np.savetxt('asteroids_oxygen_with_temp_60k_log.csv',log,delimiter=',',header='episode,loss,steps',comments='',fmt=['%d','%.8f','%d'])
-np.save('asteroids_oxygen_qtable_with_60k.npy',Q)
-print("asteroids_oxygen_60k_log.csv and asteroids_oxygen_qtable_60k.npy")
+np.savetxt('results/logs/asteroids_oxygen_log.csv',log,delimiter=',',header='episode,loss,steps',comments='',fmt=['%d','%.8f','%d'])
+np.save('results/qtables/asteroids_oxygen_qtable.npy',Q)
+print("saved results/logs/asteroids_oxygen_log.csv and results/qtables/asteroids_oxygen_qtable.npy")
 		
 
 
